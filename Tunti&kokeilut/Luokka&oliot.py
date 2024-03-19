@@ -30,3 +30,9 @@ p1.add_score()
 print(f"Nimi:{p1.nimi}, Score:{p1.score}, Location:{p1.location} ")
 p1.print_info()
 
+
+players_l = []
+players_l.append(Player("Aku", "Ankkalinna"))
+
+for p in players_l:
+    p.print_info()
