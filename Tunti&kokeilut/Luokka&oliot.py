@@ -13,6 +13,9 @@ class Player:
         self.level = self.level + 1
     def add_score(self):
         self.score += self.level * 10
+    def print_info(self):
+        print(f"Nimi:{self.nimi}, Score:{self.score}, Location:{self.location} ")
+
 
 p1 = Player("Joni", "Suomi")
 p2 = Player("Onni", "Ruotsi")
@@ -25,4 +28,5 @@ p1.up_level()
 p1.add_score()
 
 print(f"Nimi:{p1.nimi}, Score:{p1.score}, Location:{p1.location} ")
+p1.print_info()
 
