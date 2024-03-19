@@ -36,4 +36,9 @@ players_l.append(Player("Aku", "Ankkalinna"))
 players_l.append(p1)
 
 for p in players_l:
+    p.move_to_location("Tanska")
+    p.up_level()
+    p.add_score()
+
+for p in players_l:
     p.print_info()
