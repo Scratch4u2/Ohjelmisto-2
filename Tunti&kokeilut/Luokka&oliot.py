@@ -18,6 +18,8 @@ p1 = Player("Joni", "Suomi")
 p2 = Player("Onni", "Ruotsi")
 p3 = Player("Rene","Ranska")
 
+print(Player.player_count)
+
 p1.move_to_location("Norja")
 p1.up_level()
 p1.add_score()
