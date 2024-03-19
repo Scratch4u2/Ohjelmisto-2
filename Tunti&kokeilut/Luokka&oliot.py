@@ -33,6 +33,7 @@ p1.print_info()
 
 players_l = []
 players_l.append(Player("Aku", "Ankkalinna"))
+players_l.append(p1)
 
 for p in players_l:
     p.print_info()
