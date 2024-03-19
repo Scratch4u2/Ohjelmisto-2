@@ -1,6 +1,8 @@
 class Player:
+    player_count = 0
     def __init__(self, nimi, s_location):
-        print("Luodaan uusi pelaaja")
+        Player.player_count += 1
+        print(f"Luodaan uusi pelaaja, pelaaja: {Player.player_count}")
         self.nimi = nimi
         self.score = 0
         self.level = 1
