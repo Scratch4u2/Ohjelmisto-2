@@ -44,7 +44,7 @@ while not yli_10000:
         n_muutos = random.randint(-10, 15)
         auto[i].kiihdytä(n_muutos)
         auto[i].kulje(1)
-        print(auto[i].print_info())
+        auto[i].print_info()
         if auto[i].kuljettu_matka >= 10000:
             yli_10000 = True
             break
