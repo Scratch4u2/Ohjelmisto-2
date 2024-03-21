@@ -17,7 +17,7 @@ class Auto:
     def kulje(self, tunnit):
         self.kuljettu_matka = self.kuljettu_matka + (self.c_nopeus * tunnit)
     def print_info(self):
-        print(f"Rekisteritunnus:{self.rekisteritunnus}, Huippunopeus:{self.huippunopeus}kmh, Kuljettu matka:{self.kuljettu_matka}, Tämänhetkinen nopeus: {self.c_nopeus}kmh ")
+        print(f"Rekisteritunnus:{self.rekisteritunnus}\nHuippunopeus:{self.huippunopeus}kmh\nKuljettu matka:{self.kuljettu_matka}\nTämänhetkinen nopeus: {self.c_nopeus}kmh \n")
 
 
 auto1 = Auto("ABC-123",142)
