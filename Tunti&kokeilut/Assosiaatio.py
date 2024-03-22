@@ -4,9 +4,9 @@ class Koira:
     def __repr__(self):
         return "Tämä on kiva koira"
 
-class Oslista:
+class Kauppalista:
     def __init__(self,lista):
         self.lista = lista
 
-lista1 = Oslista(["Gurg","Babrik",3,"Juusto",5])
+lista1 = Kauppalista(["Gurg","Babrik",3,"Juusto",5])
 print(lista1.lista)
