@@ -18,11 +18,19 @@ dog2 = Dog(animal1, "Pug")
 #dog1.speak()
 
 class Ihminen:
-    def __init__(self,nimi,ikä):
+    def __init__(self,nimi,ika):
         self.nimi = nimi
-        self.ikä = ikä
+        self.ika = ika
     def tervehdys(self):
-        print(f"Hei, nimeni on {self.nimi} ja olen {self.ikä}-vuotta")
+        print(f"Hei, nimeni on {self.nimi} ja olen {self.ika}-vuotta")
 
-ihminen1 = Ihminen("Rene","28")
+class Opiskelija(Ihminen):
+    def __init__(self, nimi, ika, opiskelijanumero):
+        super().__init__(nimi, ika)
+        self.opiskelijanumero = opiskelijanumero
+    def tervehdys(self):
+        print(f"Hei, nimeni on {self.nimi} ja olen {self.ika}-vuotta ja opiskelijanumeroni: {self.opiskelijanumero}")
+
+
+ihminen1 = Opiskelija("Rene", 28, 123456)
 ihminen1.tervehdys()
