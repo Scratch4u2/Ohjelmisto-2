@@ -29,8 +29,12 @@ class Opiskelija(Ihminen):
         super().__init__(nimi, ika)
         self.opiskelijanumero = opiskelijanumero
     def tervehdys(self):
-        print(f"Hei, nimeni on {self.nimi} ja olen {self.ika}-vuotta ja opiskelijanumeroni: {self.opiskelijanumero}")
+        super().tervehdys()
+        print(f"Opiskelijanumeroni: {self.opiskelijanumero}")
 
 
-ihminen1 = Opiskelija("Rene", 28, 123456)
+ihminen1 = Ihminen("Rene", 28)
+opiskelija1 = Opiskelija("Onni",23,123456)
+
 ihminen1.tervehdys()
+opiskelija1.tervehdys()
