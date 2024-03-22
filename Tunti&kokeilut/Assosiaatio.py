@@ -39,10 +39,9 @@ class Kirjasto:
     def add_kirjalista(self,kirja):
         self.kirjalista.append(kirja)
     def print_info(self):
-        print(f"Nimi: {self.nimi}")
+        print(f"\nNimi: {self.nimi}")
         for kirja in self.kirjalista:
             print(kirja)
-        print("\n")
 
 kirja1 = Kirja("Onnin kivikirja")
 kirja2 = Kirja("Renen röökikirja")
@@ -52,8 +51,12 @@ kirja4 = Kirja("Jonin Ponikirja")
 kirjasto1 = Kirjasto("Oodi kirjasto")
 kirjasto1.add_kirjalista(kirja1.title)
 kirjasto1.add_kirjalista(kirja2.title)
+kirjasto1.add_kirjalista(kirja3.title)
+kirjasto1.add_kirjalista(kirja4.title)
 
 kirjasto2 = Kirjasto("Tikkurilan kirjasto")
+kirjasto2.add_kirjalista(kirja1.title)
+kirjasto2.add_kirjalista(kirja2.title)
 kirjasto2.add_kirjalista(kirja3.title)
 kirjasto2.add_kirjalista(kirja4.title)
 
