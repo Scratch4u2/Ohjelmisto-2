@@ -4,5 +4,9 @@ class Koira:
     def __repr__(self):
         return "Tämä on kiva koira"
 
-koira1 = Koira("Rufus")
-print(koira1)
+class Oslista:
+    def __init__(self,lista):
+        self.lista = lista
+
+lista1 = Oslista(["Gurg","Babrik",3,"Juusto",5])
+print(lista1.lista)
