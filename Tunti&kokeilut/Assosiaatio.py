@@ -17,3 +17,10 @@ class Koulu:
 
 koulu1 = Koulu("Metropolia")
 koulu2 = Koulu("Laurea")
+
+class Oppilas:
+    def __init__(self,nimi,koulu):
+        self.koulu = koulu
+        self.nimi = nimi
+
+Oppilas1 = Oppilas(koulu1,"Rene")
