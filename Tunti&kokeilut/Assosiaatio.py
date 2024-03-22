@@ -12,8 +12,8 @@ class Kauppalista:
 #print(lista1.lista)
 
 class Koulu:
-    def __init__(self,nimi):
+    def __init__(self, nimi):
         self.nimi = nimi
 
-koulu = Koulu("Metropolia")
-print(koulu.nimi)
+koulu1 = Koulu("Metropolia")
+koulu2 = Koulu("Laurea")
