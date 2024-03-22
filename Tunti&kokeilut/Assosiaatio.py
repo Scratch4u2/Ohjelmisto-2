@@ -15,13 +15,15 @@ class Koulu:
     def __init__(self, nimi):
         self.nimi = nimi
 
-koulu1 = Koulu("Metropolia")
-koulu2 = Koulu("Laurea")
-
 class Oppilas:
     def __init__(self, nimi, koulu):
         self.koulu = koulu
         self.nimi = nimi
+    def print_info(self):
+        print(f"Nimi: {self.nimi}\nKoulu: {self.koulu.nimi}")
 
-oppilas1 = Oppilas("Rene", koulu1.nimi)
-print(f"{oppilas1.nimi}, {oppilas1.koulu}")
+koulu1 = Koulu("Metropolia")
+koulu2 = Koulu("Laurea")
+
+oppilas1 = Oppilas("Rene", koulu1)
+oppilas1.print_info()
