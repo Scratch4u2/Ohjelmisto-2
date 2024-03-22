@@ -15,4 +15,14 @@ animal2 = Animal("cat")
 dog1 = Dog(animal1, "Bordercollie")
 dog2 = Dog(animal1, "Pug")
 
-dog1.speak()
+#dog1.speak()
+
+class Ihminen:
+    def __init__(self,nimi,ikä):
+        self.nimi = nimi
+        self.ikä = ikä
+    def tervehdys(self):
+        print(f"Hei, nimeni on {self.nimi} ja olen {self.ikä}-vuotta")
+
+ihminen1 = Ihminen("Rene","28")
+ihminen1.tervehdys()
