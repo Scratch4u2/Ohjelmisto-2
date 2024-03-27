@@ -12,9 +12,9 @@ def haku(hakusana):
             f"https://api.openweathermap.org/data/2.5/weather?lat={latitude}&lon={longitude}&appid={APIKEY TÄNNE}")
         if response.status_code == 200:
             json_data = response.json()
-            print("Tulokset hakusanalla:", hakusana)
-            temperature_kelvin = json_data['main']['temp']
-            lampo_celsius = temperature_kelvin - 273.15
+            print(f"Tulokset hakusanalla:{hakusana}")
+            lampo_kelvin = json_data['main']['temp']
+            lampo_celsius = lampo_kelvin - 273.15
             saatila = json_data['weather'][0]['description']
 
             print(f"Sää: {saatila.capitalize()}")
