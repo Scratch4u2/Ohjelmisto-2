@@ -5,7 +5,7 @@ from geopy.geocoders import Nominatim
 def haku(hakusana):
     geolocator = Nominatim(user_agent="hakusana")
     location = geolocator.geocode(hakusana)
-    apikey = APIKEY TÄHÄN
+    apikey = "APIKEY TÄHÄN"
     if location:
         latitude = location.latitude
         longitude = location.longitude
