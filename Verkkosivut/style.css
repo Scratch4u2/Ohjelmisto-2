@@ -19,7 +19,8 @@ footer{
     background-color: var(--timberwolf);
 }
 p {color: var(--night);}
-.button {color: var(--feldgrau);}
-.button:hover{color: var(--dark-slate-gray)}
+.button{color: var(--seasalt);}
+.button{background-color: var(--ash-gray)}
+.button:hover{background-color: var(--feldgrau)}
 
 
