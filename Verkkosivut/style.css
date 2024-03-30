@@ -1,5 +1,17 @@
 body {font-family: 'Montserrat', sans-serif;}
-p {color: black;}
 
+/* CSS HEX */
+--seasalt: #f7f7f7ff;
+--timberwolf: #d0c7c4ff;
+--rust: #b24729ff;
+--ash-gray: #b5bca6ff;
+--feldgrau: #58665eff;
+--dark-slate-gray: #2b3d34ff;
+--night: #121312ff;
+https://coolors.co/f7f7f7-d0c7c4-b24729-b5bca6-58665e-2b3d34-121312
+
+p {color: black;}
 .button {color: red;}
 .button:hover{color:blue}
+
+
