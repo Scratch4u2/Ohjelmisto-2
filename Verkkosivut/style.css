@@ -22,5 +22,14 @@ p {color: var(--night);}
 .button{color: var(--seasalt);}
 .button{background-color: var(--ash-gray)}
 .button:hover{background-color: var(--feldgrau)}
+.container1 {
+    width: 80%; /* 80% of the viewport width */
+    margin: 0 auto; /* Center the container */
+}
+
+img {
+    max-width: 100%; /* Image will scale down to fit its container */
+    height: auto; /* Maintain aspect ratio */
+}
 
 
