@@ -35,6 +35,8 @@ img {
     width: auto;
     margin-left: auto;
     padding-right: 20px;
+    display: flex;
+    align-items: flex-start;
 }
 
 .map {
@@ -42,5 +44,9 @@ img {
     display: block;
     margin-left: auto;
     margin-right: 0;
+}
+
+.contact-info {
+    flex-grow: 1;
 }
 
