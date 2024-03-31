@@ -31,5 +31,11 @@ img {
     max-width: 100%; /* Image will scale down to fit its container */
     height: auto; /* Maintain aspect ratio */
 }
-
+.container3{
+    margin: auto;
+}
+map{
+    width: 40%;
+    margin-left: auto;
+}
 
