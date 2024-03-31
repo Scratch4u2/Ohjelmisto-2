@@ -28,14 +28,19 @@ p {color: var(--night);}
 }
 
 img {
-    max-width: 100%; /* Image will scale down to fit its container */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
-.container3{
-    margin: auto;
-}
-map{
-    width: 40%;
+.container3 {
+    width: auto;
     margin-left: auto;
+    padding-right: 20px;
+}
+
+.map {
+    max-width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
 }
 
