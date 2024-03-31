@@ -49,4 +49,45 @@ img {
 .contact-info {
     flex-grow: 1;
 }
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.logo img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-left: 10px;
+}
+
+.nav-links ul li:first-child {
+    margin-left: 0;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.nav-links ul li a:hover {
+    background-color: #555;
+}
