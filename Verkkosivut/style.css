@@ -148,6 +148,7 @@ img {
     display: flex;
     justify-content: space-between;
     background-color: var(--dark-slate-gray);
+    z-index: 999;
 }
 
 .logo, .nav-links {
@@ -206,6 +207,11 @@ ol {
     display: grid;
     text-align: left;
 }
+
+#navbar .clear-text {
+    opacity: 1;
+}
+
 
 .item_text {
     text-align: left;
