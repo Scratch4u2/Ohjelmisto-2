@@ -205,9 +205,10 @@ ol {
 
 .clear-text {
     top: 0;
-    opacity: 0.5;
+    opacity: 0.7;
     display: grid;
     text-align: left;
+    color:white;
 }
 
 #navbar .clear-text {
