@@ -147,7 +147,7 @@ img {
     height: 10vh;
     display: flex;
     justify-content: space-between;
-    background-color: var(--feldgrau);
+    background-color: var(--dark-slate-gray);
 }
 
 .logo, .nav-links {
@@ -168,7 +168,7 @@ img {
 .nav-link a {
     display: block;
     text-decoration: none;
-    color: var(--night);
+    color: var(--ash-gray);
     line-height: 10vh;
     padding-right: 10px;
     padding-left: 10px;
@@ -216,5 +216,5 @@ ol {
 }
 
 .small_spacer {
-    height: 30px;
+    height: 40px;
 }
