@@ -31,7 +31,6 @@ def calculate(type):
             response_body = {'error': 'Unknown calculation type.', 'status': 400}
             return Response(response=response_body, status=400)
         return {'result': result, "numbers": [num1, num2]}
-
     except:
         return {'error': 'Invalid parameters.', 'status': 400}
 
