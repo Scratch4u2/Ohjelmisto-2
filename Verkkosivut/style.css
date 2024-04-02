@@ -9,6 +9,10 @@ body {font-family: 'Montserrat', sans-serif;}
     --dark-slate-gray: #2b3d34ff;
     --night: #121312ff;
 }
+body{
+    background-color: var(--timberwolf);
+    padding-top: 55px;
+}
 header{
     background-color: var(--rust)
 }
@@ -50,44 +54,22 @@ img {
     flex-grow: 1;
 }
 #navbar {
-    position: fixed;
     top: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 10px 20px;
+    left: 0;
+    position: fixed;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    padding: 5px 30px;
+    width: 95%;
+    background-color: var(--rust);
 }
 
-.logo img {
-    width: 200px;
-    height: auto;
-    margin-right: 10px;
+.nav-links {
+    margin-left: auto; /* Push nav-links to the right */
 }
 
-.nav-links ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.nav-links ul li {
-    margin-left: 10px;
-}
-
-.nav-links ul li:first-child {
-    margin-left: 0;
-}
-
-.nav-links ul li a {
+.nav-links a {
     text-decoration: none;
-    padding: 10px;
-    margin-right: 10px;
-    color: #fff;
-}
-
-.nav-links ul li a:hover {
-    background-color: #555;
+    color: var(--seasalt); /* Use the seasalt color variable */
+    margin-left: 20px; /* Add some spacing between links */
 }
