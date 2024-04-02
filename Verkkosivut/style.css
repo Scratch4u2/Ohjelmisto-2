@@ -13,6 +13,7 @@ body{
     background-color: var(--timberwolf);
     padding-top: 200px;
     padding-bottom: 50px;
+    font-size: 20px;
 }
 header{
     background-color: var(--rust);
@@ -29,31 +30,66 @@ footer{
 }
 p {color: var(--night);}
 .container1 {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
-    padding-bottom: 75px;
+    border: 1px solid black;
+    text-align: center;
+
 }
-section{
-    padding-top: 75px;
-}
+
 .container1 h1{
     padding-top: 10px;
     align-items: center;
     text-align: center;
 }
 
+
 img {
+    display: flex;
+    width: auto;
+    margin-left: auto;
     max-width: 100%;
     height: auto;
 }
-.container3 {
-    width: auto;
-    margin-left: auto;
-    padding-right: 20px;
-    display: flex;
-    align-items: flex-start;
-    padding-left: 20px;
+
+.container2 {
+    width: 85%;
+    margin: auto;
+    border: 1px solid black;
 }
+
+.container2 img {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.container2 p {
+    margin-top: 10px;
+}
+
+
+.container3 {
+    position: relative;
+    width: 80%;
+    height: 50em;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.container3 img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    max-width: 50%;
+    height: auto;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+
 
 .map {
     max-width: 30%;
@@ -104,4 +140,38 @@ img {
 .nav-link a:hover {
     background-color: var(--seasalt);
     color: var(--night);
+}
+
+ol {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.item1 {
+    display: inline-block;
+    width: 25%;
+    height: 40%;
+    padding: 20px 2em;
+    border: 1px solid black;
+}
+
+.item1 img{
+    border: 1px solid black;
+    width: 300px;
+    height: 400px;
+}
+.clear-text {
+    top: 0;
+    opacity: 0.5;
+    display: grid;
+    text-align: left;
+}
+.item_text{
+    text-align: left;
+}
+.spacer {
+    height: 10em;
+}
+.small_spacer{
+    height: 30px;
 }
