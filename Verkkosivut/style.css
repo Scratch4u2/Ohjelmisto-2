@@ -112,7 +112,7 @@ img {
     width: 80%;
     height: 23em;
     margin: 50px auto 0;
-    padding: 23px;
+    padding: 3em;
     border: 1px var(--seasalt);
     background-color: var(--feldgrau);
 }
@@ -121,10 +121,8 @@ img {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50em;
-    height: 400px;
-    padding-right: 50px;
-    padding-top: 50px;
+    width: auto;
+    padding: 2em;
 }
 
 
@@ -198,8 +196,6 @@ ol {
 
 .item1 img {
     border: 1px var(--seasalt);
-    width: 300px;
-    height: 400px;
     padding-right: 12%;
 }
 
