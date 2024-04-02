@@ -1,4 +1,6 @@
-body {font-family: 'Montserrat', sans-serif;}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 
 :root {
     --seasalt: #f7f7f7ff;
@@ -9,47 +11,67 @@ body {font-family: 'Montserrat', sans-serif;}
     --dark-slate-gray: #2b3d34ff;
     --night: #121312ff;
 }
-body{
-    background-image: url('https://i.pinimg.com/564x/ad/59/1b/ad591b815d995f734eecbbab21da6bd5.jpg');
+
+body {
+    background-image: url('https://i.pinimg.com/564x/bd/d3/19/bdd319feedf8fd013280e88055896619.jpg');
     background-size: cover;
     background-position: center;
-    background-color: rgba(255, 255, 255, 0.5);
     padding-top: 200px;
     padding-bottom: 50px;
     font-size: 20px;
 }
-header{
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+}
+
+
+header {
     background-color: var(--rust);
     color: var(--seasalt);
 }
 
 
-article{
+article {
     background-color: var(--rust);
 }
 
 h1 {
     color: var(--seasalt);
 }
+
 h2 {
     color: var(--seasalt);
 }
+
 h3 {
     color: var(--seasalt);
 }
-p {color: var(--seasalt);}
+
+p {
+    color: var(--seasalt);
+}
+
 .container1 {
     width: 80%;
     margin: 0 auto;
     border: 1px var(--seasalt);
     text-align: center;
     background-color: var(--feldgrau);
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.container1 img {
+    width: 100%;
 }
 
-#company{
+#company {
     padding-top: 10px;
     align-items: center;
     text-align: center;
@@ -73,6 +95,7 @@ img {
 }
 
 .container2 img {
+    width: 90%;
     display: block;
     margin: 0 auto;
     border: 1px var(--seasalt);
@@ -104,8 +127,6 @@ img {
 }
 
 
-
-
 .map {
     max-width: 30%;
     display: block;
@@ -117,6 +138,7 @@ img {
 .contact-info {
     flex-grow: 1;
 }
+
 #navbar {
     position: fixed;
     top: 0;
@@ -125,7 +147,7 @@ img {
     height: 10vh;
     display: flex;
     justify-content: space-between;
-    background-color: var(--rust);
+    background-color: var(--feldgrau);
 }
 
 .logo, .nav-links {
@@ -133,10 +155,9 @@ img {
     height: 100%;
 }
 
-.logo h1 {
-    padding-left: 10px;
-    margin: 0;
-    line-height: 10vh;
+.logo img{
+    width: 100%;
+    height: 10vh;
 }
 
 .nav-link {
@@ -173,23 +194,27 @@ ol {
 
 }
 
-.item1 img{
+.item1 img {
     border: 1px var(--seasalt);
     width: 300px;
     height: 400px;
 }
+
 .clear-text {
     top: 0;
     opacity: 0.5;
     display: grid;
     text-align: left;
 }
-.item_text{
+
+.item_text {
     text-align: left;
 }
+
 .spacer {
     height: 10em;
 }
-.small_spacer{
+
+.small_spacer {
     height: 30px;
 }
