@@ -10,7 +10,10 @@ body {font-family: 'Montserrat', sans-serif;}
     --night: #121312ff;
 }
 body{
-    background-color: var(--timberwolf);
+    background-image: url('https://i.pinimg.com/564x/ad/59/1b/ad591b815d995f734eecbbab21da6bd5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5);
     padding-top: 200px;
     padding-bottom: 50px;
     font-size: 20px;
@@ -25,19 +28,28 @@ article{
     background-color: var(--rust);
 }
 
-footer{
-    background-color: var(--timberwolf);
+h1 {
+    color: var(--seasalt);
 }
-p {color: var(--night);}
+h2 {
+    color: var(--seasalt);
+}
+h3 {
+    color: var(--seasalt);
+}
+p {color: var(--seasalt);}
 .container1 {
     width: 80%;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 1px var(--seasalt);
     text-align: center;
-
+    background-color: var(--feldgrau);
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.container1 h1{
+#company{
     padding-top: 10px;
     align-items: center;
     text-align: center;
@@ -55,13 +67,15 @@ img {
 .container2 {
     width: 85%;
     margin: auto;
-    border: 1px solid black;
+    border: 1px var(--seasalt);
+    background-color: var(--feldgrau);
+    padding: 10px;
 }
 
 .container2 img {
     display: block;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 1px var(--seasalt);
 }
 
 .container2 p {
@@ -74,17 +88,17 @@ img {
     width: 80%;
     height: 23em;
     margin: 50px auto 0;
-    padding: 20px;
-    border: 1px solid black;
+    padding: 23px;
+    border: 1px var(--seasalt);
+    background-color: var(--feldgrau);
 }
 
 .container3 img {
     position: absolute;
     top: 0;
     right: 0;
-    border: 1px solid black;
-    max-width: 50%;
-    height: auto;
+    width: 50em;
+    height: 400px;
     padding-right: 50px;
     padding-top: 50px;
 }
@@ -154,11 +168,13 @@ ol {
     width: 25%;
     height: 40%;
     padding: 20px 2em;
-    border: 1px solid black;
+    border: 1px var(--seasalt);
+    background-color: var(--feldgrau);
+
 }
 
 .item1 img{
-    border: 1px solid black;
+    border: 1px var(--seasalt);
     width: 300px;
     height: 400px;
 }
