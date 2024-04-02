@@ -67,6 +67,7 @@ p {
     background-color: var(--feldgrau);
     padding-bottom: 10px;
 }
+
 .container1 img {
     width: 100%;
 }
@@ -156,7 +157,7 @@ img {
     height: 100%;
 }
 
-.logo img{
+.logo img {
     width: 100%;
     height: 10vh;
 }
