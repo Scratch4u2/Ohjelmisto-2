@@ -14,7 +14,8 @@ body{
     padding-top: 55px;
 }
 header{
-    background-color: var(--rust)
+    background-color: var(--rust);
+    color: var(--seasalt);
 }
 main{
     background-color: var(--ash-gray);
@@ -61,8 +62,12 @@ img {
     background-color: var(--rust);
 }
 
+.logo{
+    color:var(--seasalt);
+}
+
 .nav-links {
-    margin-left: auto; /* Push nav-links to the right */
+    margin-left: auto;
 }
 
 .nav-links a {
