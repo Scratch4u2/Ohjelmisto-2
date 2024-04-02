@@ -194,17 +194,13 @@ ol {
 
 }
 
-.item1 img {
-    border: 1px var(--seasalt);
-    padding-right: 12%;
-}
 
 .clear-text {
     top: 0;
     opacity: 0.7;
     display: grid;
     text-align: left;
-    color:white;
+    color: white;
 }
 
 #navbar .clear-text {
