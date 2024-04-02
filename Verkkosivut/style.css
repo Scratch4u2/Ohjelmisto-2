@@ -47,6 +47,7 @@ article {
 
 h1 {
     color: var(--seasalt);
+    text-align: center;
 }
 
 h2 {
@@ -229,3 +230,4 @@ ol {
 .small_spacer {
     height: 40px;
 }
+
