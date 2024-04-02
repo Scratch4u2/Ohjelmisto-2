@@ -72,8 +72,8 @@ img {
 .container3 {
     position: relative;
     width: 80%;
-    height: 50em;
-    margin: 0 auto;
+    height: 23em;
+    margin: 50px auto 0;
     padding: 20px;
     border: 1px solid black;
 }
@@ -85,9 +85,10 @@ img {
     border: 1px solid black;
     max-width: 50%;
     height: auto;
-    padding-top: 50px;
     padding-right: 50px;
+    padding-top: 50px;
 }
+
 
 
 
