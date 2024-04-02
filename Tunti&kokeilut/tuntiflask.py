@@ -1,39 +1,40 @@
-# Mod 13 - Python-palvelinesimerkki Flaskilla
-
-from flask import Flask, request, Response
+from flask import Flask, Response
+import json
 
 app = Flask(__name__)
-
-
-def sum(a, b):
-    return a + b
-
-
-def multiply(a, b):
-    return a * b
-
-
-@app.route('/calc/<type>')
-def calculate(type):
-    # print(request.args.get('num1'))
+@app.route('/summa/<luku1>/<luku2>')
+def summa(luku1, luku2):
     try:
-        num1 = float(request.args.get('num1'))
-        num2 = float(request.args.get('num2'))
+        luku1 = float(luku1)
+        luku2 = float(luku2)
+        summa = luku1+luku2
 
-        if type == 'sum':
-            result = sum(num1, num2)  # http://localhost:3000/calc/sum?num1=3&num2=5
+        tilakoodi = 200
+        vastaus = {
+            "status": tilakoodi,
+            "luku1": luku1,
+            "luku2": luku2,
+            "summa": summa
+        }
 
-        elif type == 'multiply':
-            result = multiply(num1, num2)  # http://localhost:3000/calc/multiply?num1=3&num2=5
+    except ValueError:
+        tilakoodi = 400
+        vastaus = {
+            "status": tilakoodi,
+            "teksti": "Virheellinen yhteenlaskettava"
+        }
 
-        else:
+    jsonvast = json.dumps(vastaus)
+    return Response(response=jsonvast, status=tilakoodi, mimetype="application/json")
 
-            response_body = {'error': 'Unknown calculation type.', 'status': 400}
-            return Response(response=response_body, status=400)
-        return {'result': result, "numbers": [num1, num2]}
-    except:
-        return {'error': 'Invalid parameters.', 'status': 400}
-
+@app.errorhandler(404)
+def page_not_found(virhekoodi):
+    vastaus = {
+        "status" : "404",
+        "teksti" : "Virheellinen päätepiste"
+    }
+    jsonvast = json.dumps(vastaus)
+    return Response(response=jsonvast, status=404, mimetype="application/json")
 
 if __name__ == '__main__':
     app.run(use_reloader=True, host='127.0.0.1', port=3000)
