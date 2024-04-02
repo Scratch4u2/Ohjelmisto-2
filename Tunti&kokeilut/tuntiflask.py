@@ -1,3 +1,8 @@
+
+#http://127.0.0.1:3000/laskutyyppi/numero1/numero2
+#esim http://127.0.0.1:3000/summa/423/117
+
+
 from flask import Flask, Response
 import json
 
