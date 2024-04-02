@@ -200,6 +200,7 @@ ol {
     border: 1px var(--seasalt);
     width: 300px;
     height: 400px;
+    padding-right: 12%;
 }
 
 .clear-text {
