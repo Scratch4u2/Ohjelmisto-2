@@ -25,6 +25,7 @@ def search_airport(ICAO):
         vastaus = {
             "ICAO": ICAO,
             "Name": result[0]
+            "Municipality": result[1]
         }
     except mysql.connector.Error:
         tilakoodi = 400
