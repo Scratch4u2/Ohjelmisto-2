@@ -18,7 +18,7 @@ def search_airport(ICAO):
     try:
         koodi = ICAO
         tilakoodi = 200
-        sql = f"SELECT name FROM airport WHERE ident= '{koodi}'"
+        sql = f"SELECT name, municipality FROM airport WHERE ident= '{koodi}'"
         cursor = connection.cursor()
         cursor.execute(sql)
         result = cursor.fetchone()
