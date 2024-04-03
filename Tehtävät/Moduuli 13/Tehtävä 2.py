@@ -24,7 +24,7 @@ def search_airport(ICAO):
         result = cursor.fetchone()
         vastaus = {
             "ICAO": ICAO,
-            "Name": result[0]
+            "Name": result[0],
             "Municipality": result[1]
         }
     except mysql.connector.Error:
