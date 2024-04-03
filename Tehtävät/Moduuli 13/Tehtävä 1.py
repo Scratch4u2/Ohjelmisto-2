@@ -7,9 +7,3 @@ def on_alkuluku(numero):
     else:
         return True
 
-u_input = int(input("Anna numero: \n"))
-
-if on_alkuluku(u_input):
-    print(f"{u_input} on alkuluku")
-else:
-    print(f"{u_input} ei ole alkuluku")
