@@ -1,14 +1,10 @@
-function rollDice() {
-    return Math.floor(Math.random() * 6) + 1;
-}
-
 function probability(numDice, sumEyes) {
     let correct = 0;
 
     for (let i = 0; i < 10000; i++) {
         let throwSum = 0;
         for (let j = 0; j < numDice; j++) {
-            throwSum += rollDice();
+            throwSum += Math.floor(Math.random() * 6) + 1;
         }
         if (throwSum === sumEyes) {
             correct += 1;
