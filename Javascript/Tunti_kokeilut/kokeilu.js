@@ -20,6 +20,9 @@ console.log(age);
 age = parseFloat(age);
 console.log(age);
 
+const ageAdd = 3;
+age++;
+
 const underAge = true;
 console.log(underAge, typeof underAge)
 
@@ -34,3 +37,9 @@ const allP = document.querySelectorAll('p');
 console.log(allP)
 allP[3].textContent = 'Hei ' + 'Lukija';
 
+
+//name = prompt('Anna nimi:');
+//console.log(name)
+
+console.log(Math.random())
+console.log(Math.floor(Math.random()*6+1))
