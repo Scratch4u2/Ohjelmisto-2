@@ -23,4 +23,4 @@ const sumEyes = parseInt(prompt("Sum of the eyes:"));
 const answer = probability(numDice, sumEyes).toFixed(4);
 
 const print = document.querySelector('p');
-print.textContent = `Probability of ${sumEyes} with ${numDice} dice is: ${(answer * 100).toFixed(1)}%.`;
+print.textContent = 'Probability of ' + sumEyes + ' with ' + numDice + ' dice is:' + (answer * 100).toFixed(1) + '%';
