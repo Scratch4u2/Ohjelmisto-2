@@ -14,4 +14,4 @@ firstP.textContent = 'Hei ' + name;
 
 const allP = document.querySelectorAll('p');
 console.log(allP)
-allP.textContent[1].textContent = 'Hei' + 'Lukija';
+allP[3].textContent = 'Hei ' + 'Lukija';
