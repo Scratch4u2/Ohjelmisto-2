@@ -9,6 +9,9 @@ let age, height;
 age = 5.2;
 console.log(age, typeof age, height, typeof height)
 
+console.log(name + ' ikä on ' + age + '-vuotta')
+console.log(`${name}:n ikä on ${age}-vuotta`);
+
 //num -> string
 age = age.toString()
 console.log(age);
