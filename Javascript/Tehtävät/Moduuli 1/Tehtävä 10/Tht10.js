@@ -20,9 +20,7 @@ function probability(numDice, sumEyes) {
 
 const numDice = parseInt(prompt("Number of dice:"));
 const sumEyes = parseInt(prompt("Sum of the eyes:"));
-
 const answer = probability(numDice, sumEyes).toFixed(4);
-console.log(`The probability of getting a sum of ${sumEyes} with ${numDice} dice is approximately ${answer}.`);
 
 const print = document.querySelector('p');
 print.textContent = `Probability of ${sumEyes} with ${numDice} dice is: ${(answer * 100).toFixed(1)}%.`;
