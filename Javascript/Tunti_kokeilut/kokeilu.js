@@ -2,8 +2,12 @@
 
 console.log('I have awaken!');
 
-const name = 'Matti';
+let name = 'Matti';
 const names = ['Aku','Iines','Hannu']
+
+let age, height;
+age = 5;
+console.log(age, typeof age, height, typeof height)
 
 console.log('Moi ' + name)
 console.log('Nimet ' + names)
@@ -15,3 +19,4 @@ firstP.textContent = 'Hei ' + name;
 const allP = document.querySelectorAll('p');
 console.log(allP)
 allP[3].textContent = 'Hei ' + 'Lukija';
+
