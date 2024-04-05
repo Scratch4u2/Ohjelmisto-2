@@ -9,6 +9,15 @@ let age, height;
 age = 5;
 console.log(age, typeof age, height, typeof height)
 
+//num -> string
+age = age.toString()
+console.log(age.toString());
+//string->num
+console.log(age);
+
+const underAge = true;
+console.log(underAge, typeof underAge)
+
 console.log('Moi ' + name)
 console.log('Nimet ' + names)
 
