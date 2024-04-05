@@ -6,13 +6,15 @@ let name = 'Matti';
 const names = ['Aku','Iines','Hannu']
 
 let age, height;
-age = 5;
+age = 5.2;
 console.log(age, typeof age, height, typeof height)
 
 //num -> string
 age = age.toString()
-console.log(age.toString());
+console.log(age);
 //string->num
+//age = 'viisi vuotta'; niin tulee Nan=not a number mutta menee läpi
+age = parseFloat(age);
 console.log(age);
 
 const underAge = true;
