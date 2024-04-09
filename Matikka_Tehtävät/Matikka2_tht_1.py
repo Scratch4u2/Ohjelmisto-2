@@ -9,7 +9,7 @@ Tehtävät liittyvät ohjelmisto 2:n tehtävään 1:
 import numpy
 
 #1. tehtävä
-print("Tehtävä 1 1")
+print("Tehtävä 1 1 1 1")
 A = numpy.array([2.493,0.911])
 B = numpy.array([137.7,62.3])
 C = numpy.array([30,45,60,90,120,135,150,180,270,360])
@@ -17,5 +17,5 @@ print(numpy.degrees(A))
 print(numpy.radians(B))
 print(numpy.radians(C))
 #2 tehtävä
-print("\nTehtävä 1 2")
+print("\nTehtävä 1 1 1 2")
 print(numpy.hypot(1.6,2.3))
