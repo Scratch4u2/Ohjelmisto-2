@@ -20,3 +20,21 @@ const ages = [4, 5, 6];
 for (let i = 0; i < ages.length; i++) {
   console.log(ages[i]);
 }
+
+for (const name of names) {
+  console.log(name);
+}
+//kääntää
+ages.reverse();
+console.log(ages);
+//kääntää takaisin
+console.log(ages.toReversed());
+
+const searchParam = 'Aku';
+
+if (names.includes(searchParam)) {
+  console.log(searchParam + ' löytyi');
+  console.log(names.indexOf(searchParam));
+} else {
+  console.log(searchParam + ' Ei löytynyt');
+}
