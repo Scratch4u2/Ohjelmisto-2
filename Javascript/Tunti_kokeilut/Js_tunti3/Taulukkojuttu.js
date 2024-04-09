@@ -17,6 +17,11 @@ console.log(names)
 console.log(lastName)
 
 const ages = [4,5,6];
+//console.log(ages.length)
+
+for (let i=0; i < ages.length; i++){
+  console.log(ages[i])
+}
 
 
 
