@@ -32,10 +32,9 @@ pist_xy=np.array([pii, pii, 3*pii, pii])
 nim=np.array([1, 2, 4, 6])
 varit=np.array(['red', 'green', 'blue', 'orange'])
 
-text=[
+text = [
     r'$\pi$', r'$\frac{\pi}{2}$', r'$\frac{3\pi}{4}$', r'$\frac{\pi}{6}$',
-    r'$\frac{\pi}{6}$', r'$\frac{\pi}{4}$', r'$\frac{\pi}{3}$', r'$\frac{\pi}{2}$',
-    r'$\frac{2\pi}{3}$', r'$\frac{3\pi}{4}$', r'$\pi$', r'$\frac{3\pi}{2}$'
+    r'$\frac{\pi}{3}$', r'$\frac{\pi}{4}$', r'$\frac{2\pi}{3}$', r'$\frac{3\pi}{2}$'
 ]
 
 x = np.cos(pist_xy/nim)
@@ -45,9 +44,9 @@ plt.scatter(x, y, color=varit, marker='X')
 
 for i in range(len(pist_xy)):
     plt.annotate(text[i],
-             xy=(np.cos(pist_xy[i]/nim[i]), np.sin(pist_xy[i]/nim[i])), xycoords='data',
-             xytext=(+30, +5), textcoords='offset points', fontsize=12,
-             arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=0"))
+                 xy=(x[i], y[i]), xycoords='data',
+                 xytext=(+20, +15), textcoords='offset points', fontsize=12,
+                 arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=0"))
 
 
 plt.show()
