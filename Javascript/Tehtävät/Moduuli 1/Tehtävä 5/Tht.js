@@ -1,6 +1,6 @@
 function leapyr(year) {
-  let isLeapYear = ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0));
-  return isLeapYear;
+  let is_it = ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0));
+  return is_it;
 }
 
 const year = prompt('Give a year')
