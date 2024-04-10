@@ -1,11 +1,13 @@
 leapyears = [];
 
 function leapyr(start, end) {
+  const leapyears = [];
   for (let i = start; i < end; i++) {
-    if (i % 4 == 0) {
+    if ((i % 4 === 0 && i % 100 !== 0) || (i % 400 === 0)) {
       leapyears.push(i);
     }
   }
+  return leapyears;
 }
 
 const startyr = prompt('Start year');
