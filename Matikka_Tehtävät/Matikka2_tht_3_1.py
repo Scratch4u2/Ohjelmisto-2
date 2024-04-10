@@ -2,7 +2,7 @@
 
 
 
-#en saanut mitenkään toimimaan
+#en saanut millään toimimaan
 
 from matplotlib import pyplot as plt, patches
 import numpy as np
