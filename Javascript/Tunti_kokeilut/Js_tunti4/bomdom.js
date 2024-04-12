@@ -47,4 +47,4 @@ buttonElement.addEventListener('click', function() {
     newP.classList.toggle('blue');
 });
 
-document.addEventListener['keypress',locateUser]
+document.addEventListener('keypress',locateUser)
