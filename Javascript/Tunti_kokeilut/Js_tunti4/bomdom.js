@@ -8,11 +8,14 @@ function locationSuccess (location) {
   }
   
   const locationOptions = {
-    timeout: 3000
+    timeout: 5000
   };
   
-  function locateUser() {
-    navigator.geolocation.getCurrentPosition(locationSuccess, locationError, locationOptions);
+  function locateUser(event) {
+    console.log('Paikannusnäppäintapahtuma', event);
+    if(event.key === 'p'){
+      navigator.geolocation.getCurrentPosition(locationSuccess, locationError, locationOptions);
+    }
 }
   
   console.log('Moro!');
@@ -48,3 +51,7 @@ buttonElement.addEventListener('click', function() {
 });
 
 document.addEventListener('keypress',locateUser)
+
+document.addEventListener('contextmenu', function(event){
+  console.log()
+})
