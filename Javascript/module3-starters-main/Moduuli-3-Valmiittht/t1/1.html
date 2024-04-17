@@ -15,12 +15,20 @@
     <ul id="target"></ul>
 <script>
 const div = document.querySelector('#target');
-const html = `
-    <li>First item</li>
-    <li>Second item</li>
-    <li>Third item</li>
-`;
-div.innerHTML = html;
+const txt1 = document.createTextNode('First item')
+const txt2 = document.createTextNode('Second item')
+const txt3 = document.createTextNode('Third item')
+const ele1 = document.createElement('li');
+const ele2 = document.createElement('li');
+const ele3 = document.createElement('li');
+ele1.appendChild(txt1)
+ele2.appendChild(txt2)
+ele3.appendChild(txt3)
+
+div.appendChild(ele1);
+div.appendChild(ele2);
+div.appendChild(ele3);
+
 </script>
 
 </body>
