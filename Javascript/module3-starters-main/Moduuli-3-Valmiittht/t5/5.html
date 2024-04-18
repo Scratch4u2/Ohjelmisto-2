@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 5</title>
-    <script src="5.js" defer></script>
     <link href="5.css" rel="stylesheet">
 </head>
 
@@ -17,13 +16,66 @@
         </header>
         <main>
             <section id="pictures">
-                <!-- add articles here -->
+                <!-- Articles will be dynamically added here -->
             </section>
         </main>
         <footer>
             <p>This is a footer</p>
         </footer>
     </div>
+
+    <script>
+        const picArray = [
+            {
+                title: "Title 1",
+                mediumImage: "thumbnails/pic1.png",
+                caption: "Caption 1",
+                description: "Description 1"
+            },
+            {
+                title: "Title 2",
+                mediumImage: "thumbnails/pic2.png",
+                caption: "Caption 2",
+                description: "Description 2"
+            },
+            {
+                title: "Title 3",
+                mediumImage: "thumbnails/pic3.png",
+                caption: "Caption 3",
+                description: "Description 3"
+            }
+        ];
+
+        const picturesSection = document.getElementById("pictures");
+
+        picArray.forEach(function(pic, index) {
+            let article = document.createElement("article");
+            article.classList.add("card");
+
+            let heading = document.createElement("h2");
+            heading.textContent = pic.title;
+
+            let figure = document.createElement("figure");
+
+            let img = document.createElement("img");
+            img.src = pic.mediumImage;
+            img.alt = pic.title;
+
+            let figcaption = document.createElement("figcaption");
+            figcaption.textContent = pic.caption;
+
+            let paragraph = document.createElement("p");
+            paragraph.textContent = pic.description;
+
+            figure.appendChild(img);
+            figure.appendChild(figcaption);
+            article.appendChild(heading);
+            article.appendChild(figure);
+            article.appendChild(paragraph);
+
+            picturesSection.appendChild(article);
+        });
+    </script>
 </body>
 
 </html>
