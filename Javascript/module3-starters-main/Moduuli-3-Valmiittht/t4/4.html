@@ -12,6 +12,16 @@
 <body>
     <h1>Task 4</h1>
     <select id="target"></select>
+    <script>
+        const students = [2345768, 2134567, 542315];
+        const selectElement = document.getElementById("target");
+        for (let i = 0; i < students.length; i++) {
+            const optionElement = document.createElement("option");
+            optionElement.value = students[i];
+            optionElement.textContent = students[i];
+            selectElement.appendChild(optionElement);
+        }
+    </script>
 </body>
 
 </html>
