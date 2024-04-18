@@ -12,6 +12,15 @@
 <body>
     <h1>Task 3</h1>
     <ul id="target"></ul>
+<script>
+  let targetElement = document.getElementById('target');
+  let names = ['John', 'Paul', 'Jones'];
+  for(let i = 0; i < names.length; i++){
+    let name = document.createElement('li');
+    name.textContent = names[i];
+    targetElement.appendChild(name);
+  }
+</script>
 </body>
 
 </html>
