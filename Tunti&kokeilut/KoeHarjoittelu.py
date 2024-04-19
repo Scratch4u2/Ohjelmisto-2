@@ -1,15 +1,18 @@
-from flask import Flask, Response, jsonify
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
+# Global variable to store the total number of animal instances created
+total_animals_created = 0
+
 
 class Animal:
-    animals = 0
     def __init__(self, species, size, latin_name):
+        global total_animals_created
         self.species = species
         self.size = size
         self.latin_name = latin_name
-        Animal.animals += 1
+        total_animals_created += 1
 
     def to_dict(self):
         return {
@@ -54,5 +57,11 @@ def lynx_info(species, size, latin_name, fur_type):
     return jsonify(lynx.to_dict())
 
 
+def print_total_animals_created():
+    global total_animals_created
+    print(f"Total animals created: {total_animals_created}")
+
+
 if __name__ == '__main__':
+    print_total_animals_created()
     app.run(use_reloader=True, host='127.0.0.1', port=3000)
