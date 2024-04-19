@@ -1,3 +1,5 @@
+import Flask
+
 class Animal():  # Capitalized class name
     def __init__(self, species, size, latin_name):
         self.species = species
