@@ -23,7 +23,7 @@ class Otter(Animal):  # Inherits from Animal
 
 
 class Lynx(Animal):
-    def __init__(self, species, size, latin_name, fur_type):
+    def __init__(self, species, size, latin_name, fur_type="dense"):
         super().__init__(species, size, latin_name)
         self.fur_type = fur_type
 
