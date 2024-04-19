@@ -12,14 +12,17 @@ class Otter(Animal):  # Inherits from Animal
     def __init__(self, species, size, latin_name):
         super().__init__(species, size, latin_name)
 
-class Lynx(Animal):
-    def __init__(self, latin_name):
-        self.latin_name = latin_name
-        Animal.__init__(self,None,None,latin_name)
 
+class Lynx(Animal):
+    def __init__(self,species, size,latin_name, fur_type):
+        Animal.__init__(self, species, size, latin_name)
+        self.fur_type = fur_type
+    def printInfo(self):
+        Animal.printInfo(self)
+        print("Fur type: " + self.fur_type)
 
 # Example usage:
 otter1 = Otter("Sea Otter", "Medium", "Lutra lutra")
 otter1.printInfo()
-lynx1 = Lynx("Lynx lynx")
+lynx1 = Lynx("Arctic lynx", "Medium", "Lynx lynx", "Thick")
 lynx1.printInfo()
