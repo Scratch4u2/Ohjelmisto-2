@@ -3,11 +3,13 @@ from flask import Flask, Response, jsonify
 app = Flask(__name__)
 
 
-class Animal:  # Capitalized class name
+class Animal:
+    animals = 0
     def __init__(self, species, size, latin_name):
         self.species = species
         self.size = size
         self.latin_name = latin_name
+        Animal.animals += 1
 
     def to_dict(self):
         return {
