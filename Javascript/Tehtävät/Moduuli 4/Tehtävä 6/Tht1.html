@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>NorrisJoke</title>
 </head>
 <body>
+<h1>Want to hear a joke?</h1>
+<form id="search" action="https://api.tvmaze.com/search/shows">
+    <input id="query" name="q" type="text">
+    <input type="submit" value="Search">
+</form>
+<script>
+  document.getElementById('search').addEventListener('submit', async function(event) {
+    event.preventDefault();
+    const query = document.getElementById('query').value;
+    Joke(query);
+  });
+    function Joke(value_from_input){
+    const response = fetch(`https://api.chucknorris.io/jokes/search?query=${value_from_input}`);
+    const data = response.json();
+    const theJoke = data.value;
+    const newP = document.createElement('p');
+    newP.textContent = theJoke;
+    const newA = document.createElement('article')
+      document.body.appendChild(newA)
+    document.querySelector('article').appendChild(newP);
+  }
 
+</script>
 </body>
 </html>
