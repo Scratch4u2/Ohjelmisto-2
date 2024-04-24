@@ -19,8 +19,8 @@
     const query = document.getElementById('query').value;
     await Joke(query);
   });
-    async function Joke(value_from_input) {
-    const response = await fetch(`https://api.chucknorris.io/jokes/search?query=${value_from_input}`);
+    async function Joke(search) {
+    const response = await fetch(`https://api.chucknorris.io/jokes/search?query=${search}`);
     const data = await response.json();
     const theJoke = data[0].value;
     const newP = document.createElement('p');
