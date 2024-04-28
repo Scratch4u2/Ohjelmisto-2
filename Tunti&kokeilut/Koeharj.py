@@ -3,10 +3,12 @@ import json
 
 app = Flask(__name__)
 
+
 class Engine():
     def __init__(self, model, type="Gasoline"):
         self.model = model
         self.type = type
+
 
 class Car(Engine):
     car_count = 0
@@ -22,6 +24,7 @@ class Car(Engine):
     def print_info(self):
         super().print_info()
         print("Car details:", self.price, self.make, self.year, "Engine details:", self.engine.model, self.engine.type)
+
 
 @app.route('/luokka/<car_name>')
 def info_auto(car_name):
@@ -42,6 +45,7 @@ def info_auto(car_name):
         }
     }
     return jsonify(auto_data)
+
 
 if __name__ == '__main__':
     app.run(use_reloader=True, host='127.0.0.1', port=3000)
