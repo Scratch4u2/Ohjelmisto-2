@@ -8,6 +8,8 @@ class Engine():
     def __init__(self, model, type="Gasoline"):
         self.model = model
         self.type = type
+    def print_info(self):
+        print(self.model, self.type)
 
 
 class Car(Engine):
