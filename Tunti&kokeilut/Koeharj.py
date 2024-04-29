@@ -27,6 +27,10 @@ class Car(Engine):
         super().print_info()
         print("Car details:", self.price, self.make, self.year, "Engine details:", self.engine.model, self.engine.type)
 
+engine1 = Engine("123", "Electric")
+auto1 = Car(1000, "Ford", "2019",engine1)
+auto1.print_info()
+
 
 @app.route('/luokka/<car_name>')
 def info_auto(car_name):
