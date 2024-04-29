@@ -28,8 +28,8 @@ class Car(Engine):
         print("Car details:", self.price, self.make, self.year, "Engine details:", self.engine.model, self.engine.type)
 
 engine1 = Engine("123", "Electric")
-auto1 = Car(1000, "Ford", "2019",engine1)
-auto1.print_info()
+auto3 = Car(1000, "Ford", "2019",engine1)
+auto3.print_info()
 
 
 @app.route('/luokka/<car_name>')
